@@ -1,0 +1,32 @@
+.card {
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card-title {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #1e1d4c;
+  font-weight: 900;
+  font-family: "Poppins";
+}
+
+.card-text {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #5e6282;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-bottom: 2vh;
+}

@@ -1,0 +1,40 @@
+.custom-modal .modal-content {
+    background-color: #f8f9fa; 
+  }
+  
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-title {
+    color: #181E4B;
+    text-align: center;
+  }
+  
+  .dropdown-btn {
+    width: 100%;
+    max-width: 300px; 
+    margin-bottom: 1rem; 
+    background-color: #fff;
+    color: #181E4B;
+  }
+
+  .dropdown-item {
+    color: #181E4B;
+  }
+  
+  .modal-footer .btn {
+    width: 100%; 
+    max-width: 200px; 
+  }
+
+  .btn:active {
+    background-color: #d7d4d4;
+  }
+  
+  .modal-footer {
+    justify-content: center;
+  }
+  

@@ -1,0 +1,89 @@
+* {
+  font-family: "Poppins";
+}
+.title {
+  text-align: center;
+  margin-left: 40%;
+  font-family: "Poppins";
+  color: #181e4b;
+  font-size: 1.1rem;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 50%;
+  background-color: rgb(80, 159, 255);
+  border: 1px solid #fff;
+  color: white;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  margin-right: 10px;
+}
+
+.custom-tabs .nav-link {
+  flex: 1;
+  text-align: center;
+}
+
+.custom-tabs .nav-link.active {
+  border-bottom: 2px solid #007bff;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.login-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forgot-pwd {
+  font-size: 0.7rem;
+  color: blue;
+  margin-left: 10px;
+}
+
+.li .nav-item {
+  margin: 0;
+  color: #181e4b;
+}
+
+.custom-tabs .nav-link {
+  border: none;
+  padding-top: 0;
+  color: #181e4b;
+}
+
+.custom-tabs .nav-link.active {
+  border: none;
+  color: rgb(35, 50, 185);
+  font-weight: 600;
+}
+
+.custom-tabs .nav .nav-tabs {
+  border-bottom: none;
+}
+
+.d-flex.justify-content-center .btn {
+  margin-top: 20px;
+  padding: 8px 22px;
+}
+
+.custom-tabs .nav .nav-tabs {
+  margin: 0;
+}

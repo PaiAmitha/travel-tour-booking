@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.home {
+  background-image: url("../Assets/bg-image.png");
+  width: 100vw;
+  height: 87vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.home * {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container-fluid .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  margin: 0;
+}
+
+.curve-img {
+  position: relative;
+  left: -110px;
+  width: 65px;
+  margin-left: 160px;
+}
+
+.tagline-text {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Poppins";
+  margin-bottom: 0px;
+  margin-left: 40px; /* Adjust this value as needed to move the text left */
+}
+
+.footer-logos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.footer-logo {
+  width: 160px;
+  padding: 30px;
+}
+
+.best-services {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ffffff; /* Adjust background color as needed */
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-title {
+  font-size: 0.8rem;
+  color: #df6951;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2vh;
+}
+
+.best-services-title {
+  font-size: 1.6rem;
+  color: #181e4b;
+  margin-bottom: 2rem;
+  font-family: "Volkhov";
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .container-fluid .container {
+    width: 80%; 
+  }
+}
+
+@media (max-width: 992px) {
+  .container-fluid .container {
+    width: 90%; 
+  }
+
+  .tagline-text {
+    font-size: 1.8rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: 100vh;
+  }
+
+  .container-fluid .container {
+    width: 95%;
+  }
+
+  .curve-img {
+    width: 12%;
+    left: -142px;
+  }
+
+  .tagline-text {
+    font-size: 1.5rem; 
+    margin-left: 20px; 
+  }
+
+  .footer-logo {
+    width: 143px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tagline-text {
+    font-size: 1.2rem; 
+  }
+
+  .footer-logos {
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  .footer-logo {
+    width: 120px; 
+    padding: 20px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .best-services-title {
+    font-size: 1.4rem;
+  }
+}
