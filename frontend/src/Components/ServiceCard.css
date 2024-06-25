@@ -1,6 +1,12 @@
+/* General Styles */
+.service-card {
+  margin: 10px;
+}
+
 .card {
   border: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -8,15 +14,9 @@
   transform: translateY(-10px);
 }
 
-.card-img-top {
-  width: 30%;
-  margin: auto;
-  margin-top: 20px;
-}
-
 .card-title {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #1e1d4c;
   font-weight: 900;
   font-family: "Poppins";
@@ -24,9 +24,45 @@
 
 .card-text {
   margin-top: 0.4rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #5e6282;
   font-weight: 500;
   font-family: "Poppins";
   margin-bottom: 2vh;
+}
+
+/* Vertical Card Styles */
+.vertical .card-img-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-img-vertical {
+  width: 50%;
+  margin: auto;
+}
+
+/* Horizontal Card Styles */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  /* width: 35vw;
+  height:10vh; */
+}
+
+.horizontal .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15vw;
+}
+
+.card-img-horizontal {
+  width: 60%;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.horizontal .card-body {
+  flex: 1;
 }
