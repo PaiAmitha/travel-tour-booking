@@ -101,19 +101,153 @@ html {
   font-weight: bold;
 }
 
+.fav-title {
+  font-size: 0.8rem;
+  color: #df6951;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  /* align-self: center; */
+  margin-top: 4vh;
+  margin-left: 17vw;
+}
+
+.resort-title {
+  font-size: 1.6rem;
+  color: #181e4b;
+  margin-bottom: 2rem;
+  font-family: "Volkhov";
+  font-weight: bold;
+  margin-left: 16.6vw;
+}
+
+.resort-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.resort-image-container {
+  margin-left: 10%;
+  width: auto;
+}
+
+.resort-image {
+  margin: 10%;
+  width: 60%;
+  height: 5vh;
+}
+
+.holiday-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.holiday-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; 
+  font-family: 'Volkhov';
+  margin-top:20px;
+}
+
+.holiday-image {
+  width: 240px; /* Adjust width as needed */
+}
+
+.sightseeing-container {
+  margin:5%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sightseeing-text {
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+  top:-5%;
+}
+
+.sightseeing-container .viewpackages-btn {
+  background-color: #DF6951;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-family: 'Poppins'; 
+  font-size: 0.8rem; 
+  margin-top: 1.5rem; 
+}
+
+.sightImg-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  z-index: 1;
+  margin-top: -22%;
+}
+
+.sight-image {
+  width:13vw;
+  height:25vh;
+  margin: 1vw;
+  margin-top: 30px;
+}
+
+.iilustration-container {
+  width:30vw;
+  margin: 70%;
+}
+
+.sight-mainimage {
+  width:30vw;
+  margin-left: 70%;
+  margin-top: 15%;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 70px;
+}
+
 @media (max-width: 1200px) {
   .container-fluid .container {
-    width: 80%; 
+    width: 80%;
+  }
+
+  .holiday-text {
+    font-size: 1.6rem;
+  }
+
+  .holiday-image {
+    width: 200px;
   }
 }
 
 @media (max-width: 992px) {
   .container-fluid .container {
-    width: 90%; 
+    width: 90%;
   }
 
   .tagline-text {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
+  }
+
+  .holiday-text {
+    font-size: 1.4rem;
+  }
+
+  .holiday-image {
+    width: 180px;
   }
 }
 
@@ -132,28 +266,12 @@ html {
   }
 
   .tagline-text {
-    font-size: 1.5rem; 
-    margin-left: 20px; 
+    font-size: 1.5rem;
+    margin-left: 20px;
   }
 
   .footer-logo {
     width: 143px;
-  }
-}
-
-@media (max-width: 576px) {
-  .tagline-text {
-    font-size: 1.2rem; 
-  }
-
-  .footer-logos {
-    flex-wrap: wrap;
-    justify-content: center; 
-  }
-
-  .footer-logo {
-    width: 120px; 
-    padding: 20px;
   }
 
   .services-container {
@@ -161,7 +279,39 @@ html {
     gap: 1rem;
   }
 
+  .holiday-text {
+    font-size: 1.2rem;
+  }
+
+  .holiday-image {
+    width: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tagline-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    width: 120px;
+    padding: 20px;
+  }
+
   .best-services-title {
     font-size: 1.4rem;
+  }
+
+  .holiday-text {
+    font-size: 1rem;
+  }
+
+  .holiday-image {
+    width: 140px;
   }
 }

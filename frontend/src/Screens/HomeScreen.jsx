@@ -8,8 +8,15 @@ import logo4 from "../Assets/logo4.png";
 import logo5 from "../Assets/logo5.png";
 import services from "../Data/services";
 import ServiceCard from "../Components/ServiceCard";
-import { Container, Col } from "react-bootstrap";
-// import favorites from "../Data/favorites";
+import { Container, Col, Row, Button } from "react-bootstrap";
+import favorites from "../Data/favorites";
+import holidayBackground from "../Assets/holiday.png";
+import line from "../Assets/holiday-line.png";
+import sight1 from '../Assets/Destination1.png'
+import sight2 from '../Assets/Destination2.png'
+import sight3 from '../Assets/Destination3.png'
+import sight4 from '../Assets/Destination4.png'
+import destination from '../Assets/Illustration.png'
 
 function HomeScreen() {
   return (
@@ -82,18 +89,88 @@ function HomeScreen() {
         </div>
       </div>
       {/* Favorite Bookings*/}
-      {/* <div className="col-md-6">
-        {favorites.map((fav, index) => (
-          <Col key={index}>
-            <ServiceCard
-              image={fav.image}
-              title={fav.title}
-              description={fav.description}
-              className="horizontal"
-            />
+      <div className="fav-bookings">
+        <div className="fav-title">Fast & Easy</div>
+        <div className="resort-title">
+          Get Your Favorite <br />
+          Resort Bookings
+        </div>
+        <div className="resort-container">
+          <div className="fav-content">
+            <div className="fav-container">
+              {favorites.map((favorite, index) => (
+                <ServiceCard
+                  key={index}
+                  image={favorite.image}
+                  title={favorite.title}
+                  description={favorite.description}
+                  horizontal={true}
+                />
+              ))}
+            </div>
+          </div>
+          {/* <div className="resort-image-container">
+            <img src={resortImg} alt="Resort" className="resort-image" />
+          </div> */}
+        </div>
+        </div>
+        {/* Holiday Footer */}
+        {/* <div
+          className="holiday-footer"
+          style={{ backgroundImage: `url(${holidayBackground})` }}
+        >
+          <Container>
+            <Row className="justify-content-center text-left">
+              <Col md={6} className="d-flex flex-column align-items-start">
+                <div className="holiday-text">
+                  Let's Make Your <br />
+                  Next Holiday Amazing!!
+                </div>
+                <img src={line} alt="line" className="holiday-image mt-3" />
+              </Col>
+            </Row>
+          </Container>
+        </div> */}
+      
+      {/* Sightseeing Container */}
+      {/* <Container className="sightseeing-container">
+        <Row>
+          <Col md={6} className="left-container">
+            <div className="category-title">PROMOTION</div>
+            <div className="best-services-title">
+              Get Your Favorite <br />
+              Resort Bookings
+            </div>
+            <div className="sightseeing-text">
+              Et labore harum non nobis ipsum eum molestias mollitia <br />
+              et corporis praesentium a laudantium internos Non quis.<br />
+              eius quo eligendi corrupti et fugiat nulla qui soluta <br />
+              recusandae in maxime quasi aut ducimus illum aut optio quibusdam!
+            </div>
+            <Button className="viewpackages-btn">View Packages</Button>
           </Col>
-        ))}
-      </div> */}
+          <Col md={6} className="illustration-container">
+            <img src={destination} alt="destination" className="sight-mainimage" />
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="sightImg-container">
+        <Row>
+          <Col xs={6} sm={3}>
+            <img src={sight1} alt="destination" className="sight-image" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <img src={sight2} alt="destination" className="sight-image" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <img src={sight3} alt="destination" className="sight-image" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <img src={sight4} alt="destination" className="sight-image" />
+          </Col>
+        </Row>
+      </Container> */}
     </>
   );
 }
